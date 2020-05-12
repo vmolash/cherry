@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cherry Restaurant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/themes/custom-theme.css" />
+    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <div data-role="page" id="home" data-theme="d">
+        <div data-role="header">
+            <h1>Cherry Restaurant</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#" data-icon="home"  class="ui-btn-active ui-state-persist">Home</a></li>
+                    <li><a href="#menu" data-icon="bars">Menu</a></li>
+                    <li><a href="#contact" data-icon="phone">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="main" class="ui-content">
+            <h1>Cherry Restaurant</h1>
+            <section class="ui-corner-all ui-overlay-shadow">
+                <p>Cherry, helmed by celebrated local chef Bradley Morris, is your new open-fire kitchen destination in
+                San Diego, CA. Cherry brings its name and inspiration to life with a unique approach to cooking - honest,
+                straightforward, and communal.</p>
+            </section>
+
+            <div data-role="collapsibleset">
+                <h2>Reviews</h2>
+                <div data-role="collapsible">
+                    <img src="images/man.jpg" alt="man">
+                    <h2>Bruce H.</h2>
+                    <blockquote>"Cool vibe. I happen to drop by Cherry Restaurant between the lunch and happy hour crowd so it was very quiet which was OK with me.
+                    Cool place, great service, good music". &emsp;&mdash;&emsp; Bruce Hellinger</blockquote>
+                </div>
+                <div data-role="collapsible">
+                    <img src="images/girl1.jpg" alt="girl">
+                    <h2>Keane H.</h2>
+                    <blockquote>"Packed or no one there, bootlegger always is super accommodating and made sure I had what I needed. The food is amazing and I definitely recommend". &emsp;&mdash;&emsp; Keane Hunton.</blockquote>
+                </div>
+                <div data-role="collapsible">
+                    <img src="images/girl2.jpg" alt="girl">
+                    <h2>Harina J.</h2>
+                    <blockquote>"Came here after a fun night out for brunch with large group of people, and it was exactly what all of us needed! They had a wide variety of small plates and the endless drink options and it all looked delicious! I ordered a salad and some eggs and I killed both plates! The interactive herbal teas presses where also a must order! The servers were also great with our large group sometimes there can be confusion with big groups but the servers were amazing and super patient with the entire group!". &emsp;&mdash;&emsp; Harina Jackobs.</blockquote>
+                </div>       
+            </div>
+            <h3>Note!</h3>
+           <section class="ui-corner-all ui-overlay-shadow">
+                <p>Currently closed until further notice, in our effort to keep everyone safe. We will be updating our pages with information, and will be seeing you soon.</p>
+           </section>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h2>&copy; Cherry - 2020</h2>
+        </div>
+    </div>
+
+    <div data-role="page" id="menu" data-theme="d">
+        <div data-role="header">
+            <h1>Menu</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="#" data-icon="bars" class="ui-btn-active ui-state-persist">Menu</a></li>
+                    <li><a href="#contact" data-icon="phone">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="main" class="ui-content">
+            <h2>Regular menu:</h2>
+            <div data-role="collapsibleset">
+                <div data-role="collapsible">
+                        <h1>Starters</h1>
+                        <ul data-role="listview" data-inset="true">
+                            <li>
+                                <a href="#avocado" data-rel="popup">
+                                    <img src="images/avocado.jpg" alt="avocado">
+                                    <h3>wood oven roasted avocado</h3>
+                                </a>
+                                <div data-role="popup" id="avocado" class="ui-content" data-dismissible="false">
+                                    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                                    <p>Wood oven roasted avocado:</p>
+                                    <p>salsa roja, hot bubbling queso $13</p>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <a href="#soup" data-rel="popup">
+                                    <img src="images/soup.jpg" alt="soup">
+                                    <h3>path valley squash soup</h3>
+                                </a>
+                                <div data-role="popup" id="soup" class="ui-content" data-dismissible="false">
+                                    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                                    <p>Path valley squash soup:</p>
+                                    <p>spiced pumpkin seeds, crème fraiche $10</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#lettuce" data-rel="popup">
+                                    <img src="images/lettuce_salad.jpg" alt="lettuce">
+                                    <h3>little gem lettuce</h3>
+                                </a>
+                                <div data-role="popup" id="lettuce" class="ui-content" data-dismissible="false">
+                                    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                                    <p>Little gem lettuce:</p>
+                                    <p>garlic bread crumbs, lemon caesar vinaigrette $13</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#oysters" data-rel="popup">
+                                    <img src="images/oysters.jpg" alt="oysters">
+                                    <h3>wood grilled oysters</h3>
+                                </a>
+                                <div data-role="popup" id="oysters" class="ui-content" data-dismissible="false">
+                                    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                                    <p>Wood grilled oysters:</p>
+                                    <p>green onion bbq butter $16</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#bread" data-rel="popup">
+                                    <img src="images/bread.jpg" alt="bread">
+                                    <h3>hearth bread</h3>
+                                </a>
+                                <div data-role="popup" id="bread" class="ui-content" data-dismissible="false">
+                                    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                                    <p>Hearth bread:</p>
+                                    <p>wood fired, baked to order, vermont butter, flaked sea salt $4</p>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+                <div data-role="collapsible">
+                        <h1>Entrees</h1>
+                        <ul data-role="listview" data-inset="true">
+                            <li>
+                                <a href="#steak" data-rel="popup">
+                                    <img src="images/iron_steak.jpg" alt="steak">
+                                    <h3>grilled flat iron steak</h3>
+                                </a>
+                                <div data-role="popup" id="steak" class="ui-content">
+                                    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                                    <p>Grilled flat iron steak:</p>
+                                    <p>old school twice baked potato, bacon $29</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#veg" data-rel="popup">
+                                    <img src="images/beets.jpg" alt="vegetables">
+                                    <h3>slow cooked cast iron pot roast</h3>
+                                </a>
+                                <div data-role="popup" id="veg" class="ui-content" data-dismissible="false">
+                                    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                                    <p>Slow cooked cast iron pot roast:</p>
+                                    <p>winter root vegetables $26</p>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <a href="#vegWinter" data-rel="popup">
+                                    <img src="images/vegWinter.jpg" alt="Winter vegetables">
+                                    <h3>wood charred winter vegetables</h3>
+                                </a>
+                                <div data-role="popup" id="vegWinter" class="ui-content" data-dismissible="false">
+                                    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                                    <p>Wood charred winter vegetables:</p>
+                                    <p>black bean puree, parsley & meyer lemon sauce $23</p>
+                                </div>
+                            </li>
+        
+                            <li>
+                                <a href="#fish" data-rel="popup">
+                                    <img src="images/fish.jpg" alt="fish">
+                                    <h3>fire roasted whole fish</h3>
+                                </a>
+                                <div data-role="popup" id="fish" class="ui-content" data-dismissible="false">
+                                    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                                    <p>Fire roasted whole fish:</p>
+                                    <p>charred lemon-artichoke vinaigrette $34</p>
+                                </div>
+                            </li>
+        
+                            <li>
+                                <a href="#rib" data-rel="popup">
+                                    <img src="images/rib.jpg" alt="rib">
+                                    <h3>smoked pastrami beef rib</h3>
+                                </a>
+                                <div data-role="popup" id="rib" class="ui-content" data-dismissible="false">
+                                    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                                    <p>Smoked pastrami beef rib:</p>
+                                    <p>pickled mustard seed slaw $38</p>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+                <div data-role="collapsible">
+                        <h1>Desserts</h1>
+                        <ul data-role="listview" data-inset="true">
+                            <li>
+                                <a href="#pie" data-rel="popup">
+                                    <img src="images/cherry_cake.jpg" alt="pie">
+                                    <h3>cherry’s cherry pie</h3>
+                                </a>
+                                <div data-role="popup" id="pie" class="ui-content" data-dismissible="false">
+                                    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                                    <p>Cherry’s cherry pie:</p>
+                                    <p>baked-to-order cast iron tart cherry filling with a buttery, lattice pastry crust, madagascar vanilla ice cream $9</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#shortbread" data-rel="popup">
+                                    <img src="images/shortbread.jpg" alt="shortbread">
+                                    <h3>pineapple shortbread</h3>
+                                </a>
+                                <div data-role="popup" id="shortbread" class="ui-content" data-dismissible="false">
+                                    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                                    <p>Pineapple shortbread:</p>
+                                    <p>grilled pineapple, passion fruit caramel, salted butter, shortbread cookies & coconut-jalapeno ice cream $9</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#marshmallows" data-rel="popup">
+                                    <img src="images/marshmellow.jpg" alt="marshmallows">
+                                    <h3>big ‘ol smore’s</h3>
+                                </a>
+                                <div data-role="popup" id="marshmallows" class="ui-content" data-dismissible="false">
+                                    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                                    <p>Big ‘ol smore’s:</p>
+                                    <p>layers of graham, valrhona chocolate & house made vanilla, marshmallows fired in the wood burning oven. enough to share, or don’t; no judgement. $13</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#cake" data-rel="popup">
+                                    <img src="images/milk_chocolate_cake.jpg" alt="cake">
+                                    <h3>chocolate cake & “milk”</h3>
+                                </a>
+                                <div data-role="popup" id="cake" class="ui-content" data-dismissible="false">
+                                    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                                    <p>Chocolate cake & “milk”:</p>
+                                    <p>devil’s food layer cake, brown butter cream cheese filling, fudge frosting, sweet milk sorbet $9</p>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+
+            <h2>Special event information:</h2>
+            <ul data-role="listview" data-inset="true">
+                <li>
+                    <a href="#birthday" data-rel="dialog"><img src="images/birthday.jpg" alt="birthday">Birthday</a>
+                </li>
+                <li>
+                    <a href="#catering" data-rel="dialog"><img src="images/catering.jpg" alt="catering">Catering</a>
+                </li>
+                <li>
+                    <a href="#wedding" data-rel="dialog"><img src="images/wedding.jpg" alt="wedding">Wedding</a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h2>&copy; Cherry - 2020</h2>
+        </div>
+    </div>
+    <div data-role="page" id="birthday" data-theme="d">
+        <div data-role="header"><h1>Birthday</h1></div>
+        <div data-role="main" class="ui-content">
+            <p>We offer complete full service catering – from menus to tabletop design, all tailored to meet your every need.</p>
+            <p>Invite us to the party and we promise to captivate your guests and exceed your expectations with our creative, unique and delicious gastronomical fare!</p>
+        </div>
+    </div>
+    <div data-role="page" id="catering" data-theme="d">
+        <div data-role="header"><h1>Catering</h1></div>
+        <div data-role="main" class="ui-content">
+            <p>When you call us to cater, we make sure you get the same level of attention and the same delectable food. From business meetings to at-home celebrations, you can turn to our team for any personal or professional entertaining need.</p>
+            <p>Don’t settle for something generic when it comes to your catering. Explore our menu today and put together the perfect set of options to elevate your eating experience. No matter what you choose, we’re ready to make it memorable. Call us for more information, or put in your request for catering services right away.</p>
+        </div>
+    </div>
+    <div data-role="page" id="wedding" data-theme="d">
+        <div data-role="header"><h1>Wedding</h1></div>
+        <div data-role="main" class="ui-content">
+                <p>Besides a delicious menu and lovely atmosphere, we give you opportunity to customize your wedding. Here are some ways:</p>
+                <ul>
+                    <li>We are open to customize menu. You choose our restaurant because you love some dishes that we serve, so you can have those items for your wedding.</li>
+                    <li>We provide a "signature" cocktail. Our bartender will sit with your guests to come up with something fun.</li>
+                    <li>We have a plan in place for dietary concerns. We provide menu options for guests who might be vegan or have a food allergy.</li>
+                    <li>We do décor, unless you want to add some touches to match your wedding theme. We maintain one area to hang a custom backdrop for fun photo sessions.</li>
+                </ul>
+        </div>
+    </div>
+
+    <div data-role="page" id="contact" data-theme="d">
+        <div data-role="header">
+            <h1>Contact</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="#menu" data-icon="bars">Menu</a></li>
+                    <li><a href="#" data-icon="phone" class="ui-btn-active ui-state-persist">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="main" class="ui-content">
+            <h3>Contact</h3>
+            <section class="ui-corner-all ui-overlay-shadow">
+                <p>Phone: +1(619)333-4444</p>
+                <p><a href="mailto:cherrysd@gmail.com" target="_blank">cherrysd@gmail.com</a></p>
+            </section>
+            <h3>Location</h3>
+            <section class="ui-corner-all ui-overlay-shadow">
+                <p><a href="https://goo.gl/maps/Kky6haQTkrSPmStg9" target="_blank">1496 Pacific Hwy, San Diego, CA 92101</a></p>
+            </section>
+
+            <h3>Hours</h3>
+            <section class="ui-corner-all ui-overlay-shadow">
+                <p>Mon-Wed 6pm-10pm</p>
+                <p>Thu-Sat 11am-11pm</p>
+                <p>Sun 3pm-10pm</p>
+            </section>
+            <form>
+                <h3>Contact Form</h3>
+                <label for="name" class="ui-hidden-accessible">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Name&#42;" required>
+                
+                <label for="email" class="ui-hidden-accessible">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email&#42;" required>
+
+                <label for="subject" class="ui-hidden-accessible">Subject:</label>
+                <select name="subject" id="subject">
+                <option value="-- select --">-- Select subject--</option>
+                <option value="reservation">Reservation</option>
+                <option value="catering">Catering</option>
+                <option value="partnership">Partnership</option>
+                <option value="other">Other</option>
+                </select>
+                
+                <label for="message" class="ui-hidden-accessible">Message:</label>
+                <textarea name="message" id="message" placeholder="Message&#42;" required></textarea>
+
+                <button type="reset" class="ui-btn ui-btn-inline ui-corner-all">Reset</button>
+                <button type="submit" class="ui-btn ui-btn-inline ui-corner-all">Submit</button>
+            </form>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h2>&copy; Cherry - 2020</h2>
+        </div> 
+    </div>
+</body>
+</html>

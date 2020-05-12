@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body { font-family: Verdana, sans-serif; }
+div[data-role=page] {
+    display: block;
+    position: relative;
+}
+div[data-role=page]::after {
+    content: "";
+    background: url(../images/cherry_restaurant.jpg) no-repeat center center fixed;
+    background-size: cover;
+    opacity: .35;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+a { text-decoration: none; }
+#menu a[data-rel=dialog] { display: flex; align-items: center; }
+h1, h2,h3 {
+    font-family: 'Pacifico', cursive;
+    margin: .5rem 0 .4rem 1rem;
+}
+h3 { font-size: 1.7rem; }
+div[data-role="collapsibleset"] { margin-bottom: 1.4rem;}
+div[data-role="collapsibleset"] h3 { font-family: inherit; }
+ul {
+    list-style-type: circle;
+    padding: 1.2rem;
+}
+li { margin: 1rem; }
+p { margin: 1rem; }
+section {
+    background-color:rgba(255,255,255, .5);
+    margin: .5rem 0 1.2rem 0;
+    padding: .5rem;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+#home img { 
+    float: left;
+    margin-right: .75rem;
+    border-radius: 25%;
+ }
+#home div[data-role=collapsible] blockquote:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+#wedding p { margin-bottom: 0; }
